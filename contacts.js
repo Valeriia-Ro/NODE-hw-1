@@ -22,7 +22,7 @@ async function getContactById(contactId) {
     console.log("Can not find this contact");
     return;
   }
-  console.log(contacts);
+  console.log(gotContact);
   return gotContact;
 }
 
@@ -39,7 +39,7 @@ async function addContact(name, email, phone) {
   const newContact = { id: shortId.generate(), name, email, phone };
   contacts.push(newContact);
   fs.writeFile(contactsPath, JSON.stringify(contacts));
-  console.table(newContact);
+  console.table(contacts);
   return newContact;
 }
 
