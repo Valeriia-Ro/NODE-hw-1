@@ -1,0 +1,28 @@
+{
+  "name": "node-hw-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valeriia-Ro/NODE-hw-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valeriia-Ro/NODE-hw-1/issues"
+  },
+  "homepage": "https://github.com/Valeriia-Ro/NODE-hw-1#readme",
+  "dependencies": {
+    "shortid": "^2.2.16",
+    "yargs": "^17.2.1"
+  }
+}
