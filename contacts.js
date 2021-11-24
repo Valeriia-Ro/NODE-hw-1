@@ -28,10 +28,10 @@ async function getContactById(contactId) {
 
 async function removeContact(contactId) {
   const contacts = await listContacts();
-  const removeContact = contacts.filter((contact) => contact.id === contactId);
-  fs.writeFile(contactsPath, JSON.stringify(removeContact));
-  console.table(removeContact);
-  return removeContact;
+  const updateContact = contacts.filter((contact) => contact.id !== contactId);
+  fs.writeFile(contactsPath, JSON.stringify(updateContact));
+  console.table(updateContact);
+  return updateContact;
 }
 
 async function addContact(name, email, phone) {
