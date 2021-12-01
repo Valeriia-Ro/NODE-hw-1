@@ -4,7 +4,7 @@ const {
   removeContact,
   addContact,
   contactsName,
-} = require("./contacts.js");
+} = require("./controllers/contacts/contacts");
 
 const argv = require("yargs").argv;
 
